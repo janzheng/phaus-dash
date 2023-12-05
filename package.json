@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite dev --port 5181",
     "build": "vite build",
+    "commit": "git add .; git commit; git push origin main",
     "preview": "vite preview"
   },
   "devDependencies": {
