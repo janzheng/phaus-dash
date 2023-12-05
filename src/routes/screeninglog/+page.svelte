@@ -71,6 +71,11 @@
       <Button class="hover:border-slate-900 border-2 border-solid" variant="secondary" on:click={toggleStatus}>{statusMessage}</Button>
       <Button class="hover:border-slate-900 border-2 border-solid" variant="secondary" on:click={toggleInclusion}>{inclusionMessage}</Button>
     </form>
+    {#if filteredScreeningLog.length > 0}
+      <div class="status | my-4 text-slate-700 text-sm">
+        <p>Showing {filteredScreeningLog.length} of {data.screeningLog.length} entries.</p>
+      </div>
+    {/if}
   </div>
 
   <div class="items | grid grid-cols-3 gap-2">
