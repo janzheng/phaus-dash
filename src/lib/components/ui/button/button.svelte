@@ -13,7 +13,7 @@
 	export { className as class };
   export let type = "button"; // "submit"
 </script>
-
+ 
 <ButtonPrimitive.Root
 	{builders}
 	class={cn(buttonVariants({ variant, size, className }))}
